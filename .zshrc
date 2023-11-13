@@ -14,6 +14,9 @@ compinit
 plug "chivalryq/git-alias"
 plug "zap-zsh/completions"
 
+# fzf
+export FZF_DEFAULT_COMMAND='fd --type f --strip-cwd-prefix --hidden --follow --exclude .git'
+
 # npm package managers
 alias y="yarn"
 
@@ -23,3 +26,6 @@ alias g="git"
 alias ls='exa --icons'
 alias lsa='ls -al'
 alias lsl='ls -l'
+
+# cat replacement
+alias cat='bat'
